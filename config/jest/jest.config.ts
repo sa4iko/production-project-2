@@ -3,8 +3,6 @@
  * https://jestjs.io/docs/configuration
  */
 
-import path from 'path';
-
 export default {
     clearMocks: true,
     testEnvironment: 'jsdom',

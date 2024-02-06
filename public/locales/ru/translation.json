@@ -3,5 +3,8 @@
     "Loading": "Загрузка...",
     "Page not found": "Страница не найдена",
     "Main": "Главная",
-    "About": "О сайте"
+    "About": "О сайте",
+    "Something went wromg": "Что-то пошло не так",
+    "Refresh page": "Обновить страницу",
+    "Throw error": "Вызвать ошибку"
 }

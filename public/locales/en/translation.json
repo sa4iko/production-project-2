@@ -3,5 +3,8 @@
     "Loading": "Loading...",
     "Page not found": "Page not found",
     "Main": "Main",
-    "About": "About"
+    "About": "About",
+    "Something went wromg": "Something went wromg",
+    "Refresh page": "Refresh page",
+    "Throw error": "Throw error"
 }
