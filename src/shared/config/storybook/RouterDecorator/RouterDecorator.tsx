@@ -6,4 +6,4 @@ export const RouterDecorator = (story: () => Story) => (
     <BrowserRouter>
         {story()}
     </BrowserRouter>
-)
+);
