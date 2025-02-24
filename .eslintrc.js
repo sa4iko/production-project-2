@@ -19,11 +19,11 @@ module.exports = {
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
         indent: [2, 4],
-        'react/jsx-filename-extension': [
-            2,
-            { extensions: ['.js', '.jsx', '.tsx'] },
-        ],
+        'react/jsx-filename-extension': [2, {
+            extensions: ['.js', '.jsx', '.tsx'],
+        }],
         'import/no-unresolved': 'off',
+        'linebreak-style': ['error', 'unix'],
         'import/prefer-default-export': 'off',
         'no-unused-vars': 'warn',
         'react/require-default-props': 'off',
@@ -34,21 +34,27 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'i18next/no-literal-string': ['error', { markupOnly: true }],
+        'i18next/no-literal-string': ['error', {
+            markupOnly: true,
+            ignoreAttribute: ['data-testid', 'to'],
+        }],
         'max-len': ['error', {
             code: 100,
             ignoreComments: true,
         }],
-
+        'jsx-a11y/no-static-element-interactions': 'off',
+        'jsx-a11y/click-events-have-key-events': 'off',
+        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+        'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies
     },
     globals: {
         __IS_DEV__: true,
     },
-    // overrides: [{
-    //     files: '**/src/**/*.{test,stories}.{ts,tsx}',
-    //     rules: {
-    //         'i18next/no-literal-string': 'off',
-    //         'max-len': 'off',
-    //     },
-    // }],
+    overrides: [{
+        files: '**/src/**/*.{test,stories}.{ts,tsx}',
+        rules: {
+            'i18next/no-literal-string': 'off',
+            'max-len': 'off',
+        },
+    }],
 };
